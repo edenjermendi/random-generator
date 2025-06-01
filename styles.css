@@ -23,12 +23,14 @@ main {
 #h1 {
     font-size: 1.25rem;
     margin: 0 auto;
-    padding: 0.5rem;
-    width: 400px;
-    border-radius: 12px black;
+    padding: 0.5rem 1rem;
+    max-width: 90%;
+    border-radius: 12px;
     color: rgb(253, 253, 253);
     background-blend-mode: overlay;
+    text-align: center;
 }
+
 
 h1 {
   color: #FFB88F;
@@ -58,18 +60,26 @@ button {
     font-size: 1.25rem;
     margin: 1rem;
     border-radius: 8px;
+    max-width: 100%;
+    width: 250px;
 }
 
 .clear-button {
   background-color: #FF5841;
-  color: inherit;
+  color: black;
   border: 1px solid #444;
   padding: 10px 20px;
   font-family: 'Courier New', monospace;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+
+  /* fix button sizing */
+  width: fit-content;
+  display: inline-block;
+  margin: 1rem auto;
 }
+
 
 .clear-button:hover {
   background-color: #2c2624;
