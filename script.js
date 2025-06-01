@@ -115,13 +115,6 @@ document.querySelector(".clear-button").addEventListener("click", () => {
   result.textContent = ""; // more reliable than innerText
 });
 
-//Debugging
-document.querySelector(".clear-button").addEventListener("click", () => {
-  result.style.display = "none";
-  result.offsetHeight;
-  result.style.display = "flex";
-  result.textContent = "";
-  console.log("Terminal cleared.");
-});
+
 
 
