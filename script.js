@@ -77,7 +77,7 @@ document.querySelector(".button1").addEventListener("click", () => {
 
   lastAsciiIndex = index;
 
-  result.innerText = figurines1[index];
+  document.getElementById("terminal-content").innerText = figurines1[index];
 });
 
 
@@ -91,7 +91,7 @@ document.querySelector(".button2").addEventListener("click", () => {
   lastAnimalIndex = index; 
 
   const chosen = figurines2[index];
-  result.innerText = `${chosen.ascii}\n${chosen.fact}`;
+  document.getElementById("terminal-content").innerText = `${chosen.ascii}\n${chosen.fact}`;
 });
 
 
@@ -103,16 +103,12 @@ document.querySelector(".button3").addEventListener("click", () => {
   } while (index === lastOracleIndex);
   lastOracleIndex = index;
 
-  result.innerText = oracleMessages[index];
+  document.getElementById("terminal-content").innerText = oracleMessages[index];
 });
 
 //clear button
 document.querySelector(".clear-button").addEventListener("click", () => {
-  // Temporarily hide the terminal, then show again to force redraw
-  result.style.display = "none";
-  result.offsetHeight; // trigger reflow
-  result.style.display = "flex";
-  result.textContent = ""; // more reliable than innerText
+  document.getElementById("terminal-content").innerText = "";
 });
 
 

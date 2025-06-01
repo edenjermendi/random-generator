@@ -20,7 +20,6 @@ main {
   gap: 1.5rem;
 }
 
-/* Heading */
 h1 {
   color: #FFB88F;
   text-shadow:
@@ -83,4 +82,5 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
