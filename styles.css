@@ -86,16 +86,15 @@ button {
   margin-top: 2rem;
   width: 80%;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #00FF88;
-
   min-height: 80px;
-  white-space: pre-line;       /* allows \n to show as line breaks */
-  word-wrap: break-word;       /* prevents overflow on long facts */
+
+  white-space: pre-line;
+  word-wrap: break-word;
   overflow-wrap: break-word;
+
+  /* Fix alignment */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
